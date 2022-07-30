@@ -4,11 +4,11 @@
 input()."""
 
 # my_list = list(input("Please enter something: ").split(","))
-# my_list = [1, 2, 3, 4, 5]
-#
-# for i in range(len(my_list) // 2):
-#    my_list[i * 2 + 1], my_list[i * 2] = my_list[i * 2], my_list[i * 2 + 1]
-# print(my_list)
+ my_list = [1, 2, 3, 4, 5]
+
+ for i in range(len(my_list) // 2):
+    my_list[i * 2 + 1], my_list[i * 2] = my_list[i * 2], my_list[i * 2 + 1]
+ print(my_list)
 
 # ------------------------------------------------------------------------------------------
 
