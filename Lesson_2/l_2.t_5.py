@@ -13,9 +13,12 @@ my_ranked = [7, 5, 3, 3, 2]
 #     elif ranked == el:
 #         my_ranked.insert(i + 1, ranked)
 #         break
+      elif ranked < my_ranked[-1]:
+          my_ranked.append(ranked)
+          break
 #     else:
-#         my_ranked.append(ranked)
-#         break
+#         continue
+#       
 # print(my_ranked)
 
 for i in range(len(my_ranked)):
@@ -25,8 +28,9 @@ for i in range(len(my_ranked)):
     elif ranked == my_ranked[i]:
         my_ranked.insert(i, ranked)
         continue
-    elif ranked < my_ranked[i]:
+    elif ranked < my_ranked[-1]:
         my_ranked.append(ranked)
         break
-
+    else:
+        continue
 print(my_ranked)
